@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import Edition from "../components/Edition.astro";
+import { editions, shortDate, weekday, countLabel, typo } from "../lib/editions.js";
+const [latest, ...rest] = editions;
+const recent = rest.slice(0, 5);
+---
+<Base description={latest ? latest.intro.slice(0, 155) : undefined}>
+  {latest ? <Edition edition={latest} isHome /> : <p>La première édition arrive demain matin.</p>}
+  {recent.length > 0 && (
+    <section class="recent" aria-labelledby="recent-title">
+      <h2 id="recent-title">Les jours précédents</h2>
+      <ul>
+        {recent.map((e) => (
+          <li>
+            <a href={`/edition/${e.date}`}>
+              <span class="d">{weekday(e.date)} {shortDate(e.date)}</span>
+              <span class="t">{typo(e.items[0]?.title ?? "Journée sans nouvelle retenue")}</span>
+              <span class="n">{countLabel(e.items.length)}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>
+<style>
+  .recent { margin-top: 64px; }
+  .recent h2 { font-size: 26px; margin: 0 0 6px; }
+  .recent ul { list-style: none; margin: 0; padding: 0; }
+  .recent a { display: flex; flex-direction: column; gap: 2px; padding: 16px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .recent a:hover .t { text-decoration: underline; text-decoration-color: var(--accent); }
+  .d { font: 600 16px/1.4 var(--sans); color: var(--accent); }
+  .t { line-height: 1.4; }
+  .n { font: 400 16px/1.4 var(--sans); color: var(--ink-2); }
+</style>

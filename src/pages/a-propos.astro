@@ -1,0 +1,52 @@
+---
+import Base from "../layouts/Base.astro";
+import { RUBRIQUES } from "../lib/editions.js";
+---
+<Base title="À propos" description="Pourquoi et comment sont choisies les bonnes nouvelles publiées chaque matin : critères, sources, honnêteté.">
+  <p class="kicker">À propos</p>
+  <h1>Un contrepoids, pas des lunettes roses</h1>
+  <div class="prose">
+    <p class="lead">L'actualité met surtout en avant ce qui va mal. C'est souvent utile, mais à force, on finit par croire que rien ne progresse. Pourtant, chaque jour, des choses avancent vraiment : un traitement est validé, une espèce est sauvée, un conflit s'apaise, le chômage recule quelque part.</p>
+    <p>À la bonne heure rassemble chaque matin ces avancées-là, choisies avec soin, vérifiées et accompagnées de leurs sources. Il ne s'agit pas de nier les mauvaises nouvelles, seulement de remettre dans le tableau ce qui manque souvent.</p>
+
+    <h2>Ce qui compte comme une bonne nouvelle</h2>
+    <p>Une avancée concrète, mesurable et vérifiée, qui touche beaucoup de monde ou change durablement les choses. Les nouvelles sont classées en cinq rubriques :</p>
+    <ul>
+      <li><strong>{RUBRIQUES.sante.label}</strong> : traitement validé, maladie qui recule, découverte majeure.</li>
+      <li><strong>{RUBRIQUES.monde.label}</strong> : cessez-le-feu qui tient, libération d'otages, recul de la faim ou de la pauvreté.</li>
+      <li><strong>{RUBRIQUES.environnement.label}</strong> : espèce sauvée, record d'énergie renouvelable, pollution en baisse, zone protégée créée.</li>
+      <li><strong>{RUBRIQUES.societe.label}</strong> : chômage en baisse, loi utile adoptée, progrès pour l'éducation ou les droits.</li>
+      <li><strong>{RUBRIQUES.france.label}</strong> : réussites nationales concrètes, pas seulement des annonces.</li>
+    </ul>
+
+    <h2>Ce qui n'y figure jamais</h2>
+    <p>Les faits divers, les histoires attendrissantes sans portée, les promesses politiques sans résultat, les levées de fonds et communiqués d'entreprise, le sport (sauf exploit historique), la vie des célébrités et les rumeurs.</p>
+
+    <h2>Les règles de sélection</h2>
+    <ul>
+      <li><strong>Des faits récents.</strong> Seules les nouvelles des dernières 24 à 48 heures entrent, et la date d'origine de chaque fait est vérifiée.</li>
+      <li><strong>Des sources sérieuses.</strong> Chaque nouvelle renvoie à une à trois sources : agences de presse, grands quotidiens, revues scientifiques, organismes publics ou internationaux.</li>
+      <li><strong>L'honnêteté avant l'enthousiasme.</strong> Quand une nouvelle a une limite (un seul pays, une étude à confirmer, un chiffre donné seulement par un gouvernement ou une entreprise), elle est signalée sous la mention « À nuancer ».</li>
+      <li><strong>Pas de remplissage.</strong> Un matin pauvre en vraies bonnes nouvelles donne une édition courte, et l'introduction le dit.</li>
+      <li><strong>Pas de redite.</strong> Un sujet déjà publié ne revient que s'il y a un développement réellement nouveau, avec un titre qui commence par « Suite : ».</li>
+      <li><strong>Nos mots, leurs articles.</strong> Les résumés sont entièrement rédigés ici et restent courts. Pour aller plus loin, les sources sont là : c'est leur travail.</li>
+    </ul>
+
+    <h2>Comment c'est fait</h2>
+    <p>Chaque matin à l'aube, Claude, l'assistant d'intelligence artificielle d'Anthropic, parcourt l'actualité française et internationale, vérifie les faits dans plusieurs sources et rédige l'édition en suivant des règles écrites et relues par un humain. Un contrôle automatique bloque la publication si une règle de forme n'est pas respectée. Nous le disons clairement : une sélection préparée par une IA doit l'annoncer.</p>
+    <p>Une erreur reste possible. Les sources citées font foi, et toute erreur repérée est corrigée.</p>
+
+    <h2>Sur votre téléphone</h2>
+    <p>Vous pouvez installer le site sur l'écran d'accueil pour l'ouvrir comme une application. Sur iPhone ou iPad, dans Safari : bouton de partage, puis « Sur l'écran d'accueil ». Sur Android, dans Chrome : menu en haut à droite, puis « Ajouter à l'écran d'accueil ».</p>
+    <p>Le site n'affiche aucune publicité, ne dépose aucun cookie et ne mesure pas votre lecture.</p>
+  </div>
+</Base>
+<style>
+  h1 { font-size: clamp(34px, 8vw, 46px); margin: 10px 0 20px; }
+  .lead { font-size: 1.1em; }
+  .prose h2 { font-size: 27px; margin: 40px 0 10px; }
+  .prose p { margin: 0 0 18px; }
+  .prose ul { padding-left: 1.2em; margin: 0 0 18px; }
+  .prose li { margin: 0 0 12px; padding-left: 4px; }
+  .prose li::marker { color: var(--accent); }
+</style>

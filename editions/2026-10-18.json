@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-18",
+  "window": "15 au 18 octobre 2026",
+  "calm": true,
+  "intro": "Une matinée modeste : peu de vraies bonnes nouvelles ont passé nos critères ces derniers jours, et nous préférons le dire plutôt que d'en gonfler d'anodines. Les trois retenues sont solides : un traitement qui allonge nettement la vie de malades du cancer du pancréas, une Amazonie brésilienne qui n'avait jamais aussi peu reculé depuis le début des mesures, et des millions de travailleurs brésiliens qui gagnent un jour de repos par semaine.",
+  "items": [
+    {
+      "rubrique": "sante",
+      "title": "Cancer du pancréas : l'Europe s'apprête à autoriser un traitement qui double presque la survie",
+      "summary": "Le comité scientifique de l'Agence européenne des médicaments a recommandé le 15 octobre l'autorisation du daraxonrasib, un comprimé à prendre chaque jour contre le cancer du pancréas métastatique, pour les patients déjà traités une première fois. Dans l'essai décisif mené sur 500 malades, la survie médiane a atteint 13,2 mois, contre 6,7 mois avec la chimiothérapie habituelle. Le médicament vise une protéine appelée RAS, en cause dans la plupart de ces tumeurs et longtemps jugée hors de portée des traitements. Ses effets indésirables les plus fréquents sont des éruptions cutanées et des diarrhées, mais les arrêts de traitement ont été bien plus rares qu'avec la chimiothérapie.",
+      "caveat": "La Commission européenne doit encore donner son feu vert final dans les prochaines semaines, et le gain se compte en mois pour une maladie qui reste très grave.",
+      "why": "Le cancer du pancréas est l'un des plus meurtriers, et les patients en rechute disposaient jusqu'ici de très peu d'options efficaces.",
+      "sources": [
+        { "name": "Agence européenne des médicaments", "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026" },
+        { "name": "OncLive", "url": "https://www.onclive.com/view/chmp-recommends-approval-of-daraxonrasib-for-previously-treated-metastatic-pancreatic-cancer" }
+      ]
+    },
+    {
+      "rubrique": "environnement",
+      "title": "La déforestation de l'Amazonie brésilienne tombe à son plus bas niveau depuis 1988",
+      "summary": "Entre août 2025 et juillet 2026, 3 335 km² de forêt amazonienne ont été rasés au Brésil, selon les relevés satellites de l'institut public de recherche spatiale (Inpe) publiés le 16 octobre. C'est près de 42 % de moins que l'année précédente et le chiffre le plus bas depuis le début de ces mesures, en 1988. Dans le Cerrado, la grande savane voisine, la destruction de la végétation recule aussi de près de 24 %, à 5 517 km², son niveau le plus faible depuis 2001.",
+      "caveat": "Ces relevés mesurent les coupes rases, pas la dégradation de la forêt par les incendies ou l'exploitation sélective, qui reste une menace sérieuse.",
+      "why": "Moins de forêt détruite, c'est moins de carbone rejeté et davantage d'espèces préservées, et la preuve qu'une tendance qu'on croyait inéluctable peut s'inverser.",
+      "sources": [
+        { "name": "Outremers 360, avec l'AFP", "url": "https://outremers360.com/bassin-atlantique-appli/bresil-la-deforestation-amazonienne-au-plus-bas-niveau-depuis-pres-de-40-ans" },
+        { "name": "Reuters, repris par WTVB", "url": "https://wtvbam.com/2026/10/16/deforestation-in-brazils-amazon-falls-to-lowest-on-record-in-2025-26/" }
+      ]
+    },
+    {
+      "rubrique": "societe",
+      "title": "Le Brésil inscrit dans sa Constitution la fin de la semaine de travail de six jours",
+      "summary": "Le Congrès brésilien a promulgué le 16 octobre une réforme constitutionnelle qui instaure deux jours de repos pour cinq jours travaillés, à la place du rythme de six jours sur sept. La durée maximale du travail passera de 44 à 42 heures par semaine d'ici deux mois, puis à 40 heures un an plus tard, sans baisse de salaire. Le Sénat avait adopté le texte deux jours plus tôt par 75 voix contre une. Selon le Dieese, un institut d'études économiques lié aux syndicats, environ 26,8 millions de travailleurs devraient en bénéficier.",
+      "caveat": "La réforme a été adoptée en pleine campagne présidentielle, et certains élus estiment que sa mise en œuvre dépendra du vainqueur du second tour.",
+      "why": "Des millions de salariés, souvent parmi les plus modestes, vont gagner un deuxième jour de repos chaque semaine sans perdre de salaire.",
+      "sources": [
+        { "name": "Agência Brasil (vote du Sénat)", "url": "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-10/congress-approves-changes-brazils-working-hours" },
+        { "name": "Agência Brasil (promulgation)", "url": "https://agenciabrasil.ebc.com.br/en/politica/noticia/2026-10/brazils-congress-approves-shorter-workweek" },
+        { "name": "Buenos Aires Times", "url": "https://batimes.com.ar/news/latin-america/no-more-6x1-brazils-congress-approves-shorter-workweek.phtml" }
+      ]
+    }
+  ]
+}

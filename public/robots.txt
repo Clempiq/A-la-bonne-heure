@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://a-la-bonne-heure.vercel.app/sitemap-index.xml

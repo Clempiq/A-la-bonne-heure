@@ -1,0 +1,150 @@
+---
+import "@fontsource-variable/source-serif-4/wght.css";
+import "@fontsource-variable/source-serif-4/wght-italic.css";
+
+const { title, description, canonical } = Astro.props;
+const siteName = "À la bonne heure";
+const fullTitle = title ? `${title} · ${siteName}` : `${siteName} · les bonnes nouvelles du jour`;
+const desc =
+  description ??
+  "Chaque matin, les bonnes nouvelles importantes de l'actualité française et internationale : vérifiées, sourcées, sans enjoliver.";
+const url = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={url} />
+    <link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Bonne heure" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#fbf7ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#17140f" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={url} />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content={new URL("/icons/icon-512.png", Astro.site).href} />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <header class="masthead">
+      <div class="wrap masthead-row">
+        <a class="brand" href="/" aria-label="À la bonne heure, édition du jour">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M5 21a11 11 0 0 1 22 0Z" fill="var(--sun)" />
+            <rect x="2" y="23" width="28" height="2.6" rx="1.3" fill="var(--ink)" />
+          </svg>
+          <span>À la bonne heure</span>
+        </a>
+        <a class="masthead-link" href="/a-propos" aria-current={path.startsWith("/a-propos") ? "page" : undefined}>À propos</a>
+      </div>
+    </header>
+    <main id="contenu" class="wrap" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <nav class="foot-nav" aria-label="Pied de page">
+          <a href="/">Aujourd'hui</a>
+          <a href="/archives">Toutes les éditions</a>
+          <a href="/a-propos">À propos</a>
+        </nav>
+        <p>Une sélection quotidienne de bonnes nouvelles vérifiées. Chaque nouvelle renvoie à ses sources : les résumés sont rédigés ici, les articles appartiennent aux médias cités.</p>
+      </div>
+    </footer>
+    <script is:inline>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --paper: #fbf7ef;
+    --paper-2: #f4ecdc;
+    --ink: #1d1a16;
+    --ink-2: #5a5148;
+    --rule: #e3d8c4;
+    --accent: #b0420a;
+    --sun: #f2a42a;
+    --serif: "Source Serif 4 Variable", "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #17140f;
+      --paper-2: #221d16;
+      --ink: #f3ece0;
+      --ink-2: #bcb1a1;
+      --rule: #3a3228;
+      --accent: #f6a764;
+      --sun: #f5b041;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17140f; --paper-2: #221d16; --ink: #f3ece0; --ink-2: #bcb1a1; --rule: #3a3228;
+    --accent: #f6a764; --sun: #f5b041; color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 20px/1.65 var(--serif);
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  @media (min-width: 720px) { body { font-size: 21px; } }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  main:focus { outline: none; }
+
+  .wrap { max-width: 700px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 16px; top: 10px; background: var(--ink); color: var(--paper); padding: 10px 14px; z-index: 10; font: 600 17px/1 var(--sans); }
+
+  .masthead { border-bottom: 1px solid var(--rule); }
+  .masthead-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font: 650 23px/1 var(--serif); letter-spacing: -0.01em; padding: 8px 0; }
+  .brand-mark { width: 30px; height: 30px; flex: none; }
+  .masthead-link { font: 500 17px/1 var(--sans); color: var(--ink-2); text-decoration: none; padding: 12px 4px; border-bottom: 2px solid transparent; }
+  .masthead-link:hover, .masthead-link[aria-current="page"] { color: var(--ink); border-bottom-color: var(--sun); }
+
+  main.wrap { padding-top: 28px; padding-bottom: 72px; min-height: 60vh; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 650; letter-spacing: -0.015em; line-height: 1.2; text-wrap: balance; }
+  p { text-wrap: pretty; }
+
+  .kicker { font: 600 15px/1.3 var(--sans); letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); margin: 0; }
+
+  .foot { border-top: 1px solid var(--rule); color: var(--ink-2); font: 400 17px/1.55 var(--sans); }
+  .foot .wrap { padding-top: 24px; padding-bottom: max(40px, env(safe-area-inset-bottom)); }
+  .foot-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-bottom: 14px; }
+  .foot-nav a { color: var(--ink); padding: 6px 0; }
+  .foot p { margin: 0; }
+
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>

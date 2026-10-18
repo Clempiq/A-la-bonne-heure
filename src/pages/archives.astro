@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { editions, shortDate, weekday, monthLabel, countLabel, typo } from "../lib/editions.js";
+const months = [];
+for (const e of editions) {
+  const m = monthLabel(e.date);
+  if (!months.length || months.at(-1).label !== m) months.push({ label: m, items: [] });
+  months.at(-1).items.push(e);
+}
+---
+<Base title="Toutes les éditions" description="Toutes les éditions des bonnes nouvelles du jour, de la plus récente à la plus ancienne.">
+  <p class="kicker">Archives</p>
+  <h1>Toutes les éditions</h1>
+  {months.map((m) => (
+    <section>
+      <h2>{m.label}</h2>
+      <ul>
+        {m.items.map((e) => (
+          <li>
+            <a href={`/edition/${e.date}`}>
+              <span class="d">{weekday(e.date)} {shortDate(e.date)} · {countLabel(e.items.length)}</span>
+              <span class="t">{typo(e.items[0]?.title ?? "Journée sans nouvelle retenue")}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>
+<style>
+  h1 { font-size: clamp(34px, 8vw, 46px); margin: 10px 0 12px; }
+  h2 { font-size: 24px; margin: 36px 0 4px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  a { display: flex; flex-direction: column; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  a:hover .t { text-decoration: underline; text-decoration-color: var(--accent); }
+  .d { font: 600 16px/1.4 var(--sans); color: var(--accent); }
+  .t { line-height: 1.4; }
+</style>

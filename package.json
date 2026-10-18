@@ -1,0 +1,17 @@
+{
+  "name": "a-la-bonne-heure",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/check-editions.mjs && astro build",
+    "check": "node scripts/check-editions.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/source-serif-4": "^5.2.8",
+    "astro": "^7.3.8"
+  }
+}
