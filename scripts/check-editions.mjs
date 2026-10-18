@@ -11,6 +11,7 @@ const PERSONAL = /\b(Clem|Clément|Piquenet|Clempiq|mon père|ton père|votre p�
 const errors = [];
 const warnings = [];
 const seenTitles = new Map();
+const parsed = [];
 
 const today = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Paris" }));
 const todayIso = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
@@ -48,6 +49,7 @@ for (const file of files) {
     errors.push(`${where} : items doit être une liste`);
     continue;
   }
+  parsed.push({ file, ed });
   if (ed.items.length > 10) errors.push(`${where} : ${ed.items.length} entrées, 10 au maximum`);
   if (ed.items.length < 5 && !ed.calm) warnings.push(`${where} : moins de 5 entrées, mettre "calm": true et le dire dans l'intro si la journée est pauvre`);
   if (ed.items.length === 0 && !ed.calm) errors.push(`${where} : aucune entrée, "calm": true est obligatoire`);
@@ -92,6 +94,36 @@ for (const file of files) {
     const key = (it.title || "").toLowerCase().trim();
     if (seenTitles.has(key)) errors.push(`${w} : titre identique à ${seenTitles.get(key)}`);
     seenTitles.set(key, w);
+  });
+}
+
+// Anti-redite : une édition ne reprend pas une nouvelle publiée dans les 7 jours précédents.
+// Même article cité ou titre trop proche = erreur, sauf entrée dont le titre commence par « Suite : ».
+const DAY = 86400000;
+const normUrl = (u) => u.split("#")[0].split("?")[0].replace(/\/+$/, "").replace(/^https:\/\/www\./, "https://").toLowerCase();
+const STOP = new Set("dans pour avec sans plus moins tout tous toute leur leurs elle elles sont dont mais comme entre depuis apres avant contre sous selon cette ces son ses une des les aux par sur que qui est ont ete etre fait niveau".split(" "));
+const words = (t) => new Set(t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").split(" ").filter((w) => w.length >= 4 && !STOP.has(w)));
+const jaccard = (a, b) => { const i = [...a].filter((x) => b.has(x)).length; return i / (a.size + b.size - i || 1); };
+const isSuite = (t) => /^suite\s*:/i.test(t || "");
+
+for (const { file, ed } of parsed) {
+  const t = Date.parse(`${ed.date}T00:00:00Z`);
+  const before = parsed.filter((p) => { const d = Date.parse(`${p.ed.date}T00:00:00Z`); return d < t && t - d <= 7 * DAY; });
+  ed.items.forEach((it, i) => {
+    if (isSuite(it.title)) return;
+    const w = `editions/${file} entrée ${i + 1}`;
+    const urls = new Set((it.sources || []).map((s) => normUrl(s.url || "")));
+    const tw = words(it.title || "");
+    for (const p of before) {
+      p.ed.items.forEach((old, j) => {
+        const where = `editions/${p.file} entrée ${j + 1}`;
+        const shared = (old.sources || []).filter((s) => urls.has(normUrl(s.url || "")));
+        if (shared.length) errors.push(`${w} : même source que ${where} (${shared[0].url}). Sujet déjà publié : l'écarter, ou titre « Suite : » s'il y a un développement réellement nouveau`);
+        const sim = jaccard(tw, words(old.title || ""));
+        if (sim >= 0.5) errors.push(`${w} : titre trop proche de ${where} (« ${old.title} »). Sujet déjà publié : l'écarter, ou titre « Suite : » s'il y a un développement réellement nouveau`);
+        else if (sim >= 0.34) warnings.push(`${w} : titre assez proche de ${where} (« ${old.title} »), vérifier que ce n'est pas une redite`);
+      });
+    }
   });
 }
 

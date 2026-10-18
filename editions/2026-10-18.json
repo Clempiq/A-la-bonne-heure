@@ -1,8 +1,8 @@
 {
   "date": "2026-10-18",
-  "window": "15 au 18 octobre 2026",
-  "calm": true,
-  "intro": "Une matinée modeste : peu de vraies bonnes nouvelles ont passé nos critères ces derniers jours, et nous préférons le dire plutôt que d'en gonfler d'anodines. Les trois retenues sont solides : un traitement qui allonge nettement la vie de malades du cancer du pancréas, une Amazonie brésilienne qui n'avait jamais aussi peu reculé depuis le début des mesures, et des millions de travailleurs brésiliens qui gagnent un jour de repos par semaine.",
+  "window": "8 au 18 octobre 2026",
+  "calm": false,
+  "intro": "Pour cette première édition, la sélection couvre les dix derniers jours. Elle s'ouvre sur un traitement qui allonge nettement la vie de malades du cancer du pancréas, puis fait la part belle à la planète : déforestation de l'Amazonie au plus bas depuis 1988, Tamise plus propre, tortues géantes revenues de loin. Côté France, aucune nouvelle de la période n'a passé nos critères de sélection.",
   "items": [
     {
       "rubrique": "sante",
@@ -11,8 +11,14 @@
       "caveat": "La Commission européenne doit encore donner son feu vert final dans les prochaines semaines, et le gain se compte en mois pour une maladie qui reste très grave.",
       "why": "Le cancer du pancréas est l'un des plus meurtriers, et les patients en rechute disposaient jusqu'ici de très peu d'options efficaces.",
       "sources": [
-        { "name": "Agence européenne des médicaments", "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026" },
-        { "name": "OncLive", "url": "https://www.onclive.com/view/chmp-recommends-approval-of-daraxonrasib-for-previously-treated-metastatic-pancreatic-cancer" }
+        {
+          "name": "Agence européenne des médicaments",
+          "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026"
+        },
+        {
+          "name": "OncLive",
+          "url": "https://www.onclive.com/view/chmp-recommends-approval-of-daraxonrasib-for-previously-treated-metastatic-pancreatic-cancer"
+        }
       ]
     },
     {
@@ -22,8 +28,31 @@
       "caveat": "Ces relevés mesurent les coupes rases, pas la dégradation de la forêt par les incendies ou l'exploitation sélective, qui reste une menace sérieuse.",
       "why": "Moins de forêt détruite, c'est moins de carbone rejeté et davantage d'espèces préservées, et la preuve qu'une tendance qu'on croyait inéluctable peut s'inverser.",
       "sources": [
-        { "name": "Outremers 360, avec l'AFP", "url": "https://outremers360.com/bassin-atlantique-appli/bresil-la-deforestation-amazonienne-au-plus-bas-niveau-depuis-pres-de-40-ans" },
-        { "name": "Reuters, repris par WTVB", "url": "https://wtvbam.com/2026/10/16/deforestation-in-brazils-amazon-falls-to-lowest-on-record-in-2025-26/" }
+        {
+          "name": "Outremers 360, avec l'AFP",
+          "url": "https://outremers360.com/bassin-atlantique-appli/bresil-la-deforestation-amazonienne-au-plus-bas-niveau-depuis-pres-de-40-ans"
+        },
+        {
+          "name": "Reuters, repris par WTVB",
+          "url": "https://wtvbam.com/2026/10/16/deforestation-in-brazils-amazon-falls-to-lowest-on-record-in-2025-26/"
+        }
+      ]
+    },
+    {
+      "rubrique": "environnement",
+      "title": "Le grand tunnel creusé sous Londres a réduit de 86 % les rejets d'eaux usées dans la Tamise",
+      "summary": "Mis en service en 2025, un tunnel de 25 kilomètres creusé sous la Tamise recueille désormais les eaux usées qui débordaient auparavant dans le fleuve à chaque forte pluie. Selon le premier bilan annuel du projet, publié le 13 octobre, ces rejets sont passés d'une moyenne de plus de 21 millions de mètres cubes par an à moins de 3 millions en 2025. La part des jours présentant un risque sanitaire lié à ces débordements est tombée de 76 % à 10 %. Environ 84 tonnes de déchets venus des égouts n'ont pas atteint le fleuve.",
+      "caveat": "Ces chiffres sont des modélisations publiées par l'exploitant et le constructeur du tunnel, et 2025 a été une année particulièrement sèche.",
+      "why": "Un fleuve qui traverse une ville de plusieurs millions d'habitants redevient plus sain, pour la faune comme pour les riverains.",
+      "sources": [
+        {
+          "name": "Thames Water",
+          "url": "https://www.thameswater.co.uk/news/2026/oct/86-drop-in-sewage-discharges-into-thames-as-the-operation-of-thames-tideway-tunnel-transfers-to-thames-water"
+        },
+        {
+          "name": "Water Magazine",
+          "url": "https://www.watermagazine.co.uk/2026/10/14/tideway-tunnel-cuts-storm-overflow-volumes-to-thames-by-86/"
+        }
       ]
     },
     {
@@ -33,9 +62,48 @@
       "caveat": "La réforme a été adoptée en pleine campagne présidentielle, et certains élus estiment que sa mise en œuvre dépendra du vainqueur du second tour.",
       "why": "Des millions de salariés, souvent parmi les plus modestes, vont gagner un deuxième jour de repos chaque semaine sans perdre de salaire.",
       "sources": [
-        { "name": "Agência Brasil (vote du Sénat)", "url": "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-10/congress-approves-changes-brazils-working-hours" },
-        { "name": "Agência Brasil (promulgation)", "url": "https://agenciabrasil.ebc.com.br/en/politica/noticia/2026-10/brazils-congress-approves-shorter-workweek" },
-        { "name": "Buenos Aires Times", "url": "https://batimes.com.ar/news/latin-america/no-more-6x1-brazils-congress-approves-shorter-workweek.phtml" }
+        {
+          "name": "Agência Brasil (vote du Sénat)",
+          "url": "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-10/congress-approves-changes-brazils-working-hours"
+        },
+        {
+          "name": "Agência Brasil (promulgation)",
+          "url": "https://agenciabrasil.ebc.com.br/en/politica/noticia/2026-10/brazils-congress-approves-shorter-workweek"
+        },
+        {
+          "name": "Buenos Aires Times",
+          "url": "https://batimes.com.ar/news/latin-america/no-more-6x1-brazils-congress-approves-shorter-workweek.phtml"
+        }
+      ]
+    },
+    {
+      "rubrique": "societe",
+      "title": "Les voitures électriques ont évité 20 milliards de dollars de pétrole importé depuis la crise d'Ormuz",
+      "summary": "Selon le centre de réflexion londonien Ember, les voitures électriques en circulation dans les pays importateurs de pétrole ont évité la consommation d'environ 200 millions de barils de mars à août 2026, soit près de 20 milliards de dollars. La Chine représente 14 milliards de ces économies et l'Union européenne 3,1 milliards, l'Allemagne et la France en tête. Dans le monde, les voitures entièrement électriques ont atteint 18 % des ventes de voitures neuves sur les huit premiers mois de l'année, contre 16 % un an plus tôt. Au Danemark, le parc électrique remplace déjà l'équivalent de 13 % de la consommation de pétrole du pays.",
+      "caveat": "Il s'agit d'estimations calculées par Ember à partir des ventes et des parcs de véhicules, pas de mesures directes du carburant économisé.",
+      "why": "Chaque voiture électrique rend un pays un peu moins dépendant d'un pétrole devenu cher et incertain depuis la fermeture du détroit d'Ormuz.",
+      "sources": [
+        {
+          "name": "Ember",
+          "url": "https://ember-energy.org/latest-updates/electric-cars-have-saved-oil-importing-countries-20bn-since-the-start-of-the-hormuz-energy-crisis/"
+        },
+        {
+          "name": "Electrek",
+          "url": "https://electrek.co/2026/10/13/electric-cars-saved-20b-in-oil-and-the-us-is-falling-behind/"
+        }
+      ]
+    },
+    {
+      "rubrique": "environnement",
+      "title": "Aux Seychelles, les tortues géantes d'Aldabra n'ont jamais été aussi nombreuses",
+      "summary": "Une étude de la fondation des îles Seychelles et de l'université d'Exeter, rendue publique le 8 octobre, estime à environ 180 000 le nombre de tortues géantes vivant sur l'atoll d'Aldabra. C'est le chiffre le plus élevé jamais enregistré pour cette espèce, que la chasse avait réduite à moins de 1 000 individus au XIXe siècle. L'estimation repose sur cinq années de comptages, de 2018 à 2022, sur cet atoll classé réserve naturelle intégrale en 1981 puis inscrit au patrimoine mondial de l'Unesco. Ces tortues sont désormais plus nombreuses que les habitants des Seychelles, environ 122 000.",
+      "caveat": "Les chercheurs s'inquiètent de sécheresses plus fréquentes et de la montée des eaux, qui menacent cet atoll très bas.",
+      "why": "C'est la démonstration qu'une protection stricte et durable peut ramener une espèce du bord de l'extinction.",
+      "sources": [
+        {
+          "name": "CNN, repris par KRDO",
+          "url": "https://krdo.com/news/2026/10/08/once-near-extinction-these-giant-tortoises-now-outnumber-people-in-the-seychelles-survey-finds/"
+        }
       ]
     }
   ]

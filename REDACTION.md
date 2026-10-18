@@ -40,8 +40,9 @@ Une nouvelle française qui relève clairement d'une autre rubrique (un traiteme
 
 ## Fraîcheur et non-répétition
 
-1. **Fenêtre stricte : les dernières 24 à 48 heures.** Vérifier la date d'origine de chaque fait, pas seulement celle de l'article (un article d'hier peut raconter une décision vieille d'un mois : elle n'entre pas).
-2. **Aucune redite.** Avant de chercher, relire les éditions des 7 derniers jours et dresser une liste d'exclusion. Un sujet déjà publié ne revient que pour un développement réellement nouveau (nouveau chiffre officiel, décision définitive, mise en œuvre effective). Le titre commence alors par « Suite : » et l'entrée ne porte que sur ce développement.
+1. **Fenêtre : depuis la dernière édition publiée, 72 heures au maximum.** En pratique, les faits de la veille et de l'avant-veille, et le lundi tout le week-end. Vérifier la date d'origine de chaque fait, pas seulement celle de l'article : un article d'hier qui raconte une décision vieille d'une semaine n'entre pas.
+2. **Aucune redite d'un jour à l'autre.** Avant de chercher, relire les éditions des 7 derniers jours et dresser une liste d'exclusion des faits déjà publiés. Un sujet déjà publié ne revient pas, ni reformulé, ni parce qu'un autre média en parle. Seule exception : un développement réellement nouveau (décision définitive, nouveau chiffre officiel, mise en œuvre effective). Le titre commence alors par « Suite : » et l'entrée ne porte que sur ce développement, avec une phrase de rappel au maximum.
+3. **Garde-fou automatique.** Le contrôle qualité refuse une entrée qui cite le même article qu'une édition des 7 jours précédents, ou dont le titre est trop proche d'un titre déjà publié, sauf si son titre commence par « Suite : ». Ce garde-fou ne remplace pas la liste d'exclusion : il attrape seulement les redites les plus visibles.
 
 ## Sources
 
@@ -88,4 +89,4 @@ Un fichier par jour : `editions/AAAA-MM-JJ.json`, à la date du jour de publicat
 
 ## Contrôle
 
-`npm run check` vérifie le format, les rubriques, la longueur et le nombre de phrases des résumés, les sources (1 à 3, URL directes, pas de redirection ni de page d'accueil), les citations de plus de 15 mots, les doublons de titres, l'absence de tiret cadratin et de mention personnelle. `npm run build` lance ce contrôle puis construit le site. Un build en échec n'est jamais poussé.
+`npm run check` vérifie le format, les rubriques, l'absence de redite avec les 7 derniers jours, la longueur et le nombre de phrases des résumés, les sources (1 à 3, URL directes, pas de redirection ni de page d'accueil), les citations de plus de 15 mots, les doublons de titres, l'absence de tiret cadratin et de mention personnelle. `npm run build` lance ce contrôle puis construit le site. Un build en échec n'est jamais poussé.
