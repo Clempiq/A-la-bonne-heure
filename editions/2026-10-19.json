@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "window": "16 au 19 octobre 2026",
+  "calm": true,
+  "intro": "L'actualité du week-end a été très chargée, mais elle a apporté peu de progrès concrets et vérifiés. Une seule nouvelle a passé nos critères : la fin d'une longue épidémie de rougeole au Canada. Côté France, aucune nouvelle de la période ne les a passés, et l'édition reste donc volontairement courte.",
+  "items": [
+    {
+      "rubrique": "sante",
+      "title": "Au Canada, l'épidémie de rougeole du Manitoba, qui durait depuis vingt mois, est déclarée terminée",
+      "summary": "La province canadienne du Manitoba a déclaré terminée le 16 octobre l'épidémie de rougeole qui durait depuis février 2025, soit près de vingt mois. Elle a compté 1 038 cas, dont 931 confirmés en laboratoire, et 52 hospitalisations, dont 6 en soins intensifs, sans aucun décès. Le dernier cas confirmé remontait au mois d'août. Selon les autorités provinciales, aucune épidémie de rougeole n'est désormais en cours au Canada.",
+      "caveat": "Le Canada a perdu l'an dernier son statut de pays ayant éliminé la rougeole, et le virus circule encore activement aux États-Unis voisins.",
+      "why": "La fin de cette épidémie, où la plupart des malades hospitalisés n'étaient pas vaccinés, rouvre la voie à un retour du Canada parmi les pays débarrassés de la rougeole.",
+      "sources": [
+        {
+          "name": "Global News",
+          "url": "https://globalnews.ca/news/12105857/manitoba-measles-outbreak-over"
+        },
+        {
+          "name": "CBC",
+          "url": "https://cbc.ca/news/canada/manitoba/measles-outbreak-declared-over-9.7384397"
+        }
+      ]
+    }
+  ]
+}
