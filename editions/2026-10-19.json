@@ -1,9 +1,145 @@
 {
   "date": "2026-10-19",
-  "window": "16 au 19 octobre 2026",
-  "calm": true,
-  "intro": "L'actualité du week-end a été très chargée, mais elle a apporté peu de progrès concrets et vérifiés. Une seule nouvelle a passé nos critères : la fin d'une longue épidémie de rougeole au Canada. Côté France, aucune nouvelle de la période ne les a passés, et l'édition reste donc volontairement courte.",
+  "window": "12 au 19 octobre 2026",
+  "calm": false,
+  "intro": "Cette édition remonte sur toute la semaine écoulée. Elle s'ouvre sur l'électricité qui arrive chez des dizaines de millions d'Africains, puis sur une baisse nette des émissions françaises de gaz à effet de serre. Suivent des progrès de santé en Asie et en Europe, de nouvelles aires protégées en Californie et en Bretagne, et quelques signaux encourageants au Yémen et au Nigeria.",
   "items": [
+    {
+      "rubrique": "societe",
+      "title": "En Afrique, 64 millions de personnes ont été raccordées à l'électricité par le programme Mission 300",
+      "summary": "Lancé par la Banque mondiale et la Banque africaine de développement, le programme Mission 300 vise à apporter l'électricité à 300 millions d'Africains d'ici 2030. Le président de la Banque mondiale a indiqué le 16 octobre, lors des assemblées annuelles de l'institution, que 59 millions de personnes y avaient déjà eu accès grâce à elle, et 5 millions de plus grâce à la banque africaine. Le rythme s'accélère : 12 millions de raccordements sur l'exercice 2024, 18 millions sur 2025, puis 28 millions sur la dernière année. Les branchements passent par le réseau, des mini-réseaux et des installations solaires autonomes.",
+      "caveat": "Ces chiffres sont donnés par les banques qui financent le programme, et il reste plus de 230 millions de personnes à raccorder pour atteindre l'objectif.",
+      "why": "L'électricité change le quotidien des familles, des écoles, des centres de santé et des petits commerces sur un continent où des centaines de millions de personnes en sont encore privées.",
+      "sources": [
+        {
+          "name": "Banque mondiale",
+          "url": "https://www.worldbank.org/en/news/speech/2026/10/16/remarks-by-world-bank-group-president-ajay-banga-at-the-2026-annual-meetings-plena"
+        },
+        {
+          "name": "Diplomatic Times",
+          "url": "https://www.diplomatictimesonline.com/world-bank-afdb-connect-64-million-africans-to-electricity/"
+        }
+      ]
+    },
+    {
+      "rubrique": "france",
+      "title": "Les émissions françaises de gaz à effet de serre ont reculé de 4,1 % au premier semestre 2026",
+      "summary": "Selon le baromètre du Citepa, l'organisme chargé de l'inventaire national, publié le 13 octobre, la France a émis 179,7 millions de tonnes équivalent CO2 au premier semestre 2026, contre 187,4 millions un an plus tôt. Les bâtiments, avec moins de gaz consommé pour le chauffage, et les transports portent l'essentiel de la baisse. Sur l'année entière, le Citepa prévoit un recul de 2,8 %, plus rapide que celui de 2025. Les rejets de particules fines et d'oxydes d'azote diminuent eux aussi.",
+      "caveat": "Les chiffres sont provisoires, une partie de la baisse tient à des carburants plus chers, et 2026 resterait légèrement au-dessus de la trajectoire fixée par la stratégie nationale bas-carbone.",
+      "why": "La France reste sur une pente de baisse de ses émissions, condition pour tenir ses engagements climatiques et respirer un air moins pollué.",
+      "sources": [
+        {
+          "name": "Citepa",
+          "url": "https://www.citepa.org/emissions-de-gaz-a-effet-de-serre-en-2026-une-baisse-de-28-attendue-selon-le-barometre-du-citepa/"
+        },
+        {
+          "name": "Connaissance des énergies",
+          "url": "https://www.connaissancedesenergies.org/gaz-a-effet-de-serre-des-emissions-en-forte-baisse-mais-loin-detre-dans-les-clous"
+        }
+      ]
+    },
+    {
+      "rubrique": "sante",
+      "title": "La Malaisie garde la certification de l'OMS pour l'élimination de la transmission du VIH et de la syphilis de la mère à l'enfant",
+      "summary": "L'OMS a remis le 19 octobre à la Malaisie, à Manille, le certificat confirmant qu'elle a maintenu l'élimination de la transmission du VIH et de la syphilis de la mère à l'enfant sur la période 2021-2024. Plus de 95 % des femmes enceintes y sont dépistées pour les deux infections, et environ 99 % de celles qui vivent avec le VIH reçoivent un traitement. Le taux de transmission du VIH au bébé est tombé à 1,5 % en 2024, sous le seuil de 2 % fixé par l'OMS. Le pays avait été le premier de sa région à obtenir cette validation, en 2018.",
+      "caveat": "Il s'agit du maintien d'un statut déjà obtenu, pas d'une première, et les chiffres ont été diffusés par le ministère malaisien de la Santé.",
+      "why": "C'est la preuve qu'un dépistage systématique pendant la grossesse protège durablement les nouveau-nés de deux infections graves.",
+      "sources": [
+        {
+          "name": "The Star",
+          "url": "https://www.thestar.com.my/news/nation/2026/10/19/malaysia-retains-who-validation-for-eliminating-mother-to-child-hiv-syphilis-transmission"
+        },
+        {
+          "name": "Malay Mail",
+          "url": "https://www.malaymail.com/news/malaysia/2026/10/19/malaysia-retains-who-validation-for-eliminating-mother-to-child-hiv-syphilis-transmission/239767"
+        }
+      ]
+    },
+    {
+      "rubrique": "sante",
+      "title": "L'Europe s'apprête à autoriser une pilule contre l'obésité et un traitement de l'achondroplasie chez l'enfant",
+      "summary": "Le comité scientifique de l'Agence européenne des médicaments a recommandé le 16 octobre l'autorisation de l'orforglipron, un comprimé quotidien de la famille des traitements GLP-1, contre l'obésité et le diabète de type 2 chez l'adulte. Contrairement aux injections les plus connues, il se prend par la bouche, sans contrainte de repas. Le même avis recommande le navepegritide, une injection hebdomadaire destinée aux enfants atteints d'achondroplasie, la forme de nanisme la plus fréquente. Ces deux médicaments sont déjà autorisés aux États-Unis.",
+      "caveat": "La Commission européenne doit encore donner son feu vert, et le remboursement sera décidé pays par pays.",
+      "why": "Un traitement par comprimé pourrait rendre plus accessible la prise en charge de l'obésité, et les enfants atteints d'achondroplasie disposeront d'une option de plus.",
+      "sources": [
+        {
+          "name": "ARY News",
+          "url": "https://arynews.tv/foundayo-weight-loss-pill-wins-eu-drug-regulators-backing"
+        },
+        {
+          "name": "PharmaNow",
+          "url": "https://www.pharmanow.live/latest-news/ema-chmp-october-2026-meeting-highlights-orforglipron-biosimilars"
+        }
+      ]
+    },
+    {
+      "rubrique": "environnement",
+      "title": "La Californie crée deux aires marines protégées, les premières depuis 2012, portées par des tribus amérindiennes",
+      "summary": "La commission californienne de la pêche et de la faune a approuvé le 15 octobre deux nouvelles aires marines protégées au large du comté de Santa Barbara. La première, près de Carpinteria, protège un récif rocheux, une forêt de kelp et une zone fréquentée par de jeunes requins blancs. La seconde, à Point Sal, couvre environ 24 km². Proposées par des communautés chumash, ce sont les premières aires ajoutées au réseau de l'État depuis 2012 : le forage et la pêche au chalut y seront interdits.",
+      "caveat": "La réglementation doit encore être rédigée, ce qui peut prendre plusieurs années, et d'autres demandes de protection ont été refusées.",
+      "why": "Ces zones mettent à l'abri des écosystèmes côtiers riches et associent pour la première fois des tribus à leur création.",
+      "sources": [
+        {
+          "name": "Santa Barbara Independent",
+          "url": "https://www.independent.com/2026/10/16/state-approves-new-marine-protected-areas-on-the-central-coast/"
+        },
+        {
+          "name": "NRDC",
+          "url": "https://www.nrdc.org/press-releases/ca-fish-and-game-commission-votes-protect-sensitive-coastline-areas"
+        }
+      ]
+    },
+    {
+      "rubrique": "monde",
+      "title": "Au Yémen, 159 détenus libérés à Sanaa sous le contrôle de la Croix-Rouge",
+      "summary": "Les autorités houthies ont libéré le 17 octobre à Sanaa 159 combattants des forces gouvernementales capturés début septembre sur la côte de la mer Rouge. Le Comité international de la Croix-Rouge a rencontré chaque détenu en privé pour vérifier son identité et son accord, a prévenu les familles et a organisé les examens médicaux et le retour. Il s'agit d'une amnistie décidée unilatéralement par les dirigeants houthis.",
+      "caveat": "La guerre a repris depuis l'effondrement de la trêve en juillet, et le grand échange de prisonniers négocié au printemps reste en suspens.",
+      "why": "Pour 159 familles, c'est le retour d'un proche, et un geste qui maintient un fil humanitaire entre belligérants.",
+      "sources": [
+        {
+          "name": "A News, avec Anadolu",
+          "url": "https://www.anews.com.tr/middle-east/2026/10/17/yemens-houthis-release-159-detainees-in-sanaa-icrc"
+        },
+        {
+          "name": "Latin Times",
+          "url": "https://www.latintimes.com/houthis-free-159-yemen-prisoners-saudi-strikes-kill-children-egypt-warns-600273"
+        }
+      ]
+    },
+    {
+      "rubrique": "societe",
+      "title": "Au Nigeria, l'inflation tombe à 14,6 %, contre 21 % il y a un an",
+      "summary": "Selon le bureau national des statistiques du Nigeria, publié le 15 octobre, la hausse des prix sur un an est revenue à 14,63 % en septembre 2026, après 15,39 % en août et 20,98 % en septembre 2025. Sur un mois, les prix n'ont presque pas bougé (0,06 %), et ceux de l'alimentation ont même reculé de 1,55 %. L'inflation hors alimentation et énergie descend à 12,95 %.",
+      "caveat": "Les prix alimentaires restent environ 20 % plus chers qu'il y a un an, et une inflation plus faible signifie que les prix montent moins vite, pas qu'ils baissent.",
+      "why": "Dans le pays le plus peuplé d'Afrique, une inflation qui ralentit soulage le budget de dizaines de millions de ménages modestes.",
+      "sources": [
+        {
+          "name": "Legit.ng",
+          "url": "https://www.legit.ng/business-economy/economy/1736354-good-news-nigerians-september-inflation-rate-drops-1463-food-prices-fall/"
+        },
+        {
+          "name": "Technext",
+          "url": "https://technext24.com/4p2b"
+        }
+      ]
+    },
+    {
+      "rubrique": "france",
+      "title": "La Bretagne crée sa plus grande réserve naturelle régionale, dans les dunes du Pays bigouden",
+      "summary": "Le conseil régional de Bretagne a voté à l'unanimité le 14 octobre la création de la réserve naturelle régionale des dunes et paluds bigoudènes, dans le sud du Finistère. Elle couvre 1 423 hectares, dont 500 en mer, sur neuf communes de Plozévet à Penmarc'h. Plus de 1 200 espèces animales y ont été observées, dont environ 320 espèces d'oiseaux. Le site est une référence nationale pour deux oiseaux menacés, le gravelot à collier interrompu et la panure à moustaches.",
+      "caveat": "Le gestionnaire et la réglementation précise de la réserve restent à définir.",
+      "why": "Ce littoral dunaire fragile, riche en oiseaux, bénéficie désormais d'une protection durable.",
+      "sources": [
+        {
+          "name": "Région Bretagne",
+          "url": "https://www.bretagne.bzh/actualites/dunes-et-paluds-bigoudenes/"
+        },
+        {
+          "name": "Alouette",
+          "url": "https://www.alouette.fr/nouvelle-reserve-naturelle-bretagne-grande"
+        }
+      ]
+    },
     {
       "rubrique": "sante",
       "title": "Au Canada, l'épidémie de rougeole du Manitoba, qui durait depuis vingt mois, est déclarée terminée",
