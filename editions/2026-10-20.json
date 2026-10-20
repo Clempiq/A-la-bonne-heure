@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "window": "18 au 20 octobre 2026",
+  "calm": true,
+  "intro": "Journée calme pour les bonnes nouvelles : les derniers jours ont surtout été marqués par les tensions autour du détroit d'Ormuz, les manifestations en France et la guerre en Ukraine. Deux faits solides seulement passent le tri, un traitement contre un cancer du rectum autorisé aux États-Unis et un accord européen avec Andorre et Saint-Marin. Aucune nouvelle française assez forte et récente n'a été retenue.",
+  "items": [
+    {
+      "rubrique": "sante",
+      "title": "Cancer du rectum : les États-Unis autorisent une immunothérapie seule, qui permet à de nombreux malades d'éviter l'opération",
+      "summary": "Le 19 octobre, l'Agence américaine du médicament (FDA) a donné une autorisation accélérée au dostarlimab (Jemperli, laboratoire GSK) pour certains cancers du rectum de stade II ou III. Il s'agit des tumeurs dites dMMR ou MSI-H, une forme particulière qui répond très bien à l'immunothérapie. Dans l'essai AZUR-1, mené sur 154 malades jamais traités, 47 % n'avaient plus de tumeur détectable un an plus tard selon une relecture indépendante. Après environ deux ans de suivi, 71 % n'avaient reçu que ce médicament, sans chirurgie, radiothérapie ni chimiothérapie, et sans progression de la maladie.",
+      "caveat": "Autorisation accélérée, qui devra être confirmée par des données complémentaires, valable pour l'instant aux seuls États-Unis et pour une minorité de cancers du rectum.",
+      "why": "L'ablation du rectum laisse souvent des séquelles lourdes, et un traitement par perfusion peut désormais les épargner à une partie des malades.",
+      "sources": [
+        { "name": "Targeted Oncology", "url": "https://www.targetedonc.com/view/dostarlimab-fda-approval-locally-advanced-rectal-cancer" },
+        { "name": "OncLive", "url": "https://www.onclive.com/view/fda-approves-dostarlimab-for-dmmr-msi-h-locally-advanced-rectal-cancer" }
+      ]
+    },
+    {
+      "rubrique": "monde",
+      "title": "L'Union européenne signe un accord qui ouvre son marché intérieur à Andorre et à Saint-Marin",
+      "summary": "Le 19 octobre à Bruxelles, l'Union européenne a signé un accord d'association avec Andorre et Saint-Marin, deux petits États enclavés qui utilisent déjà l'euro. Le texte leur donne accès au marché intérieur européen, avec les mêmes règles de concurrence que les pays membres. Il prévoit aussi une coopération dans la recherche, l'éducation, l'environnement et la protection des consommateurs. Les négociations avaient été lancées fin 2014 et conclues en décembre 2023.",
+      "caveat": "Le Parlement européen doit encore approuver l'accord et les deux pays doivent le ratifier, tandis que l'ouverture des services financiers se fera progressivement.",
+      "why": "Pour les habitants et les entreprises de ces deux pays voisins de la France, de l'Espagne et de l'Italie, les échanges avec l'Union deviennent plus simples et plus sûrs juridiquement.",
+      "sources": [
+        { "name": "Eunews", "url": "https://www.eunews.it/en/2026/10/19/eu-andorra-and-san-marino-sign-association-agreement/" },
+        { "name": "EUbusiness", "url": "https://www.eubusiness.com/trade/andorra-and-san-marino-sign-eu-association-agreement/" }
+      ]
+    }
+  ]
+}
