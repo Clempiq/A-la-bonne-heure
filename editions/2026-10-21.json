@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-21",
+  "window": "20 et 21 octobre 2026",
+  "calm": true,
+  "intro": "Journée calme : peu de faits nouveaux et solides depuis hier matin, et l'édition est donc courte. On y trouve un traitement de l'hépatite B chronique autorisé aux États-Unis et un vote définitif du Parlement français sur un texte de l'époque coloniale.",
+  "items": [
+    {
+      "rubrique": "sante",
+      "title": "Hépatite B chronique : les États-Unis autorisent un traitement qui permet à certains malades d'arrêter leurs médicaments",
+      "summary": "L'Agence américaine du médicament (FDA) a autorisé le 20 octobre le bepirovirsen, vendu sous le nom de Hibsago par le laboratoire GSK. Ce traitement par injections, sur 24 semaines au plus, s'ajoute aux antiviraux que les malades prennent souvent à vie. Dans deux essais menés sur plus de 1 800 adultes, environ 19 % des patients traités contrôlaient encore le virus six mois après l'arrêt de tout traitement, contre aucun sous placebo. Le Japon l'avait déjà autorisé en août.",
+      "caveat": "Le traitement ne concerne qu'une partie des malades, sans cirrhose et avec une charge virale déjà contrôlée, et il comporte des risques sérieux pour le foie et les plaquettes.",
+      "why": "Plus de 250 millions de personnes vivent avec une hépatite B chronique dans le monde selon l'OMS, et jusqu'ici presque aucune ne pouvait espérer arrêter son traitement.",
+      "sources": [
+        { "name": "HCPLive", "url": "https://www.hcplive.com/view/fda-approves-bepirovirsen-for-chronic-hepatitis-b" },
+        { "name": "Yahoo News", "url": "https://www.yahoo.com/news/science/articles/fda-approves-hibsago-hepatitis-b-215018054.html" }
+      ]
+    },
+    {
+      "rubrique": "france",
+      "title": "Le Parlement abroge définitivement le Code noir, qui encadrait l'esclavage dans les colonies françaises",
+      "summary": "Le Sénat a voté le 20 octobre, sans aucune voix contre, l'abrogation de l'édit royal de 1685 appelé Code noir et des textes qui en découlaient. L'Assemblée nationale l'avait déjà adopté à l'unanimité en mai. Ces règles n'avaient plus d'effet depuis l'abolition de l'esclavage en 1848, mais elles n'avaient jamais été formellement retirées du droit français. La loi doit maintenant être promulguée.",
+      "caveat": "La portée est avant tout symbolique : le texte ne change rien aux droits en vigueur.",
+      "why": "Le droit français cesse officiellement de contenir un texte qui organisait l'esclavage, avec l'accord de tous les groupes politiques des deux assemblées.",
+      "sources": [
+        { "name": "France Info", "url": "https://www.franceinfo.fr/societe/racisme/le-parlement-abroge-definitivement-le-code-noir-qui-reglementait-l-esclavage-dans-les-colonies-francaises-apres-un-vote-a-l-unanimite-du-senat_8245921.html" },
+        { "name": "Le Soleil", "url": "https://lesoleil.sn/international/france-le-parlement-abroge-definitivement-le-code-noir/" }
+      ]
+    }
+  ]
+}
