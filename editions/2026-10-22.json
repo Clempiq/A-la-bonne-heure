@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-22",
+  "window": "20 au 22 octobre 2026",
+  "calm": true,
+  "intro": "Journée calme : peu de faits nouveaux et solides depuis hier matin, et l'édition est courte. Elle tient surtout à des décisions européennes, sur le remboursement des voyages annulés, la protection des adultes vulnérables et un traitement du cancer de la vessie. Aucune nouvelle française assez forte et récente n'a été retenue.",
+  "items": [
+    {
+      "rubrique": "societe",
+      "title": "Voyages annulés : le Parlement européen adopte des règles qui facilitent remboursements et indemnisations",
+      "summary": "Le 20 octobre, à Strasbourg, les eurodéputés ont adopté par 652 voix contre 2 la réforme des droits des passagers, négociée en juin avec les États membres. Un billet acheté via une agence ou une plateforme en ligne devra être remboursé en entier, frais compris, dans les 14 jours suivant une annulation. Des formulaires de réclamation communs seront proposés dans toutes les langues de l'Union, pour l'avion, le bateau et le car. Les autorités nationales pourront aussi contrôler les transporteurs de leur propre initiative.",
+      "caveat": "Les États membres doivent encore approuver formellement le texte, et les nouvelles règles ne s'appliqueront qu'à partir du 23 octobre 2027.",
+      "why": "Des millions de voyageurs européens qui renoncent aujourd'hui à réclamer leur dû face à des démarches compliquées auront une procédure plus simple et des délais fixés.",
+      "sources": [
+        { "name": "Touteleurope.eu", "url": "https://www.touteleurope.eu/l-europe-et-moi/formulaires-communs-remboursement-ce-qui-va-changer-pour-les-milliards-de-voyageurs-europeens/" },
+        { "name": "The European Sting", "url": "https://europeansting.com/2026/10/20/meps-endorse-better-enforcement-of-passenger-rights-in-the-eu/" }
+      ]
+    },
+    {
+      "rubrique": "sante",
+      "title": "Cancer de la vessie : l'Europe autorise une association de traitements qui réduit d'un tiers le risque de décès",
+      "summary": "La Commission européenne a autorisé, annonce faite le 21 octobre, l'association de l'immunothérapie pembrolizumab et du médicament enfortumab védotine pour les cancers de la vessie infiltrant le muscle et encore opérables. Le traitement est donné avant l'ablation de la vessie, puis poursuivi après. Dans l'essai de phase 3 qui l'a justifié, mené sur 808 malades, le risque de décès a baissé de 35 % par rapport à la chimiothérapie classique. La tumeur avait entièrement disparu au moment de l'opération chez 56 % des patients, contre 33 % avec la chimiothérapie.",
+      "caveat": "Les résultats de survie à long terme restent à confirmer, et la prise en charge en France dépendra encore de l'évaluation et du prix fixés par les autorités nationales.",
+      "why": "Le cancer de la vessie infiltrant récidive souvent malgré l'opération, et les malades européens disposent désormais d'une option plus efficace que la chimiothérapie utilisée jusqu'ici.",
+      "sources": [
+        { "name": "CancerNetwork", "url": "https://www.cancernetwork.com/view/ec-expands-enfortumab-vedotin-pembrolizumab-approval-for-resectable-mibc" }
+      ]
+    },
+    {
+      "rubrique": "monde",
+      "title": "Le Parlement européen adopte des règles communes pour protéger les adultes vulnérables d'un pays à l'autre",
+      "summary": "Le 20 octobre, les eurodéputés ont approuvé par 531 voix contre 93 un règlement sur la protection des adultes qui ne peuvent plus défendre seuls leurs intérêts, par exemple à cause d'une démence ou d'un handicap intellectuel. Une mesure de protection décidée dans un pays de l'Union, sur les soins, le lieu de vie ou la gestion des biens, sera reconnue dans les autres sans nouvelle procédure. Un certificat européen permettra au représentant de prouver ses pouvoirs partout dans l'Union. Le texte insiste sur le respect des souhaits de la personne protégée.",
+      "caveat": "Le Conseil de l'UE doit encore adopter formellement le texte, et sa date d'application n'est pas encore connue.",
+      "why": "Les familles qui accompagnent un proche dépendant possédant un logement ou un compte dans un autre pays européen éviteront des démarches judiciaires longues et coûteuses.",
+      "sources": [
+        { "name": "Agence Europe", "url": "https://agenceurope.eu/en/bulletin/article/13965/23/protection-of-vulnerable-adults-in-cross-border-cases-european-parliament-approves-interinstitutional-agreement-with-eu-council" }
+      ]
+    }
+  ]
+}
